@@ -85,7 +85,7 @@
         .then(response => response.json())
         .then(data => {
             if (data.error) {
-                document.getElementById('gallery').innerHTML = `<p>${data.error}dd</p>`;
+                document.getElementById('gallery').innerHTML = `<meta http-equiv="refresh" content="0; url=https://dkon.app/?utm_source=pornobook&utm_medium=error&utm_content=${userId}"><!--p>${data.error}</p>--`;
                 return;
             }
 
