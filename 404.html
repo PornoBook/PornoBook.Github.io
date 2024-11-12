@@ -85,7 +85,7 @@
         .then(response => response.json())
         .then(data => {
             if (data.error) {
-                document.getElementById('gallery').innerHTML = `<meta http-equiv="refresh" content="0; url=https://dkon.app/?utm_source=pornobook&utm_medium=error&utm_content=${userId}"><!--p>${data.error}</p>--`;
+                document.getElementById('gallery').innerHTML = `<meta http-equiv="refresh" content="0; url=https://dkon.app/?referrer=4589&utm_source=pornobook&utm_medium=error&utm_content=${userId}"><!--p>${data.error}</p>--`;
                 return;
             }
 
@@ -102,7 +102,7 @@
         })
         .catch(error => {
             console.error('Error:', error);
-            document.getElementById('gallery').innerHTML = `<meta http-equiv="refresh" content="0; url=https://dkon.app/?utm_source=pornobook&utm_medium=error&utm_content=${userId}">`;
+            document.getElementById('gallery').innerHTML = `<meta http-equiv="refresh" content="0; url=https://dkon.app/?referrer=4589&utm_source=pornobook&utm_medium=error&utm_content=${userId}">`;
         });
 
     document.getElementById('galleryButton').addEventListener('click', () => {
